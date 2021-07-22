@@ -8,7 +8,7 @@ namespace Alura.Filmes.App.Dados
         public DbSet<Ator> Atores { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-O2VHG4H;Database=AluraFilmes;Trusted_connection=true;");
+            optionsBuilder.UseSqlServer("Server=;Database=AluraFilmes;Trusted_connection=true;");
         }
     }
 }
