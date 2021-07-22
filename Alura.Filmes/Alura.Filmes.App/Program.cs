@@ -1,4 +1,5 @@
 ﻿using Alura.Filmes.App.Dados;
+using Alura.Filmes.App.Extensions;
 
 namespace Alura.Filmes.App
 {
@@ -9,6 +10,9 @@ namespace Alura.Filmes.App
             //select * from actor
             using (var contexto = new AluraFilmesContexto())
             {
+                // metodo de extensao que loga sql no entity
+                contexto.LogSQLToConsole();
+
                 foreach (var ator in contexto.Atores)
                 {
                     System.Console.WriteLine(ator);
