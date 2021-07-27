@@ -11,11 +11,13 @@ namespace Alura.Filmes.App
             using (var contexto = new AluraFilmesContexto())
             {
                 // metodo de extensao que loga sql no entity
-                contexto.LogSQLToConsole();
+                //contexto.LogSQLToConsole();
 
                 foreach (var ator in contexto.Atores)
                 {
                     System.Console.WriteLine(ator);
+
+                    System.Console.ReadLine();
                 }
             }
         }
